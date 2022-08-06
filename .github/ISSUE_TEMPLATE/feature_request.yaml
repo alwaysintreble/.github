@@ -1,0 +1,13 @@
+name: Feature request
+description: Request a feature!
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe what feature you would like with a clear, concise title and a short, detailed description.
+  - type: textarea
+    id: feature
+    attributes:
+      label: What should this feature do?

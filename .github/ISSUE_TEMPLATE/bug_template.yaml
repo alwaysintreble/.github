@@ -1,0 +1,35 @@
+name: Bug Report
+description: File a bug report.
+title: "Bug: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! Please provide as many and as in depth details as possible.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-results
+    attributes:
+      label: What were the expected results?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Is this reproducible?
+      description: If yes, please provide steps.
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](/.github/code_of_conduct.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
